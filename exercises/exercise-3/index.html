@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <style>
+      #body {
+        margin: 0;
+        background-color: grey;
+      }
+      #main {
+        background-color: white;
+        margin: 0;
+        min-height: 500px;
+        width: 1400px;
+      }
+      #top-background {
+        width: 1400px;
+        height: 138px;
+        background-color: #80c3d0;
+      }
+      nav {
+        ul{
+          margin: 0;
+        }
+        li {
+          list-style: none;
+          display: inline-block;
+          margin-left: 20px;
+        }
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: normal;
+        align-content: space-between;
+      }
+
+      .flex-items:nth-child(1) {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+      }
+
+      .flex-items:nth-child(2) {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <header>
+          <div id="top-background">
+            <div id="Logo">Logo</div>
+            <nav>
+              <ul>
+                <li><strong class="Events">Events</strong></li>
+                <li><strong>Contact</strong></li>
+                <li><strong>About</strong></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-items">Attractions 1</div>
+        <div class="flex-items">Atrractions 2</div>
+      </div>
+    </main>
+  </body>
+</html>
