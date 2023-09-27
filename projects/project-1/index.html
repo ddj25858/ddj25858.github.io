@@ -26,11 +26,17 @@
       /* fonts */
       h1 {
         font-family: "Maven Pro", sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        text-align: center;
         color: #cb2343;
       }
       h2 {
         font-family: "Maven Pro", sans-serif;
+        font-weight: 900;
+        font-size: 36px;
         color: #1a3648;
+        text-align: center;
       }
       h3 {
         font-family: "League Spartan", sans-serif;
@@ -57,6 +63,35 @@
         display: flex;
         justify-content: space-between;
       }
+      header #logo img {
+        width: 166px;
+        height: 89px;
+        padding: 25px;
+      }
+
+      #nav ul {
+        list-style: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        font-family: "Maven Pro", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+      }
+
+      #nav li {
+        display: inline-block;
+      }
+      #nav a {
+        text-decoration: none;
+        color: #1a3648;
+        width: 117px;
+        display: block;
+        padding: 0;
+        margin-top: 69px;
+        margin-bottom: 35px;
+      }
+
       /* see: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_perfect_center */
       #hero {
         height: 443px;
@@ -94,9 +129,12 @@
     <main>
       <header>
         <div id="logo">
-          <img src="" alt="" />
+          <img
+            src="images/Central PA Attractions Logo.png"
+            alt="Central PA Attractions Logo"
+          />
         </div>
-        <nav>
+        <nav id="nav">
           <ul>
             <li><a href="#">Events</a></li>
             <li><a href="#">About</a></li>
