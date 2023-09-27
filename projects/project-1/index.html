@@ -22,8 +22,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
     <style>
-      /* fonts */
+      /* text */
       h1 {
         font-family: "Maven Pro", sans-serif;
         font-weight: 900;
@@ -38,8 +39,11 @@
         color: #1a3648;
         text-align: center;
       }
+
       h3 {
         font-family: "League Spartan", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
         color: #1a3648;
       }
       body {
@@ -52,8 +56,9 @@
         font-family: "Inter", sans-serif;
       }
     </style>
+
     <style>
-      /* text and cards */
+      /* top bar */
       main {
         width: 1440px;
         border: 1px solid black;
@@ -91,15 +96,26 @@
         margin-top: 69px;
         margin-bottom: 35px;
       }
+    </style>
 
+    <style>
+      /* banner image */
       /* see: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_perfect_center */
-      #hero {
-        height: 443px;
-        background-image: url(https://placehold.co/1440x443);
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+      #hero {
+        display: flex;
+        height: 443px;
+      }
+    </style>
 
+    <style>
+      /* Cards */
       .card-holder {
-        border: 1px solid black;
+        border: 1px solid white;
         display: flex;
         flex-wrap: wrap;
         width: 1060px;
@@ -108,7 +124,7 @@
 
       .card {
         width: 530px;
-        background-color: pink;
+        background-color: white;
         .desc {
           padding: 10px;
         }
@@ -119,20 +135,62 @@
         }
       }
 
+      .card img {
+        width: 530px;
+        height: 320px;
+        padding: 10px;
+      }
+
       a.button {
+        text-decoration: none;
+        background-color: #e8934b;
         width: 100%;
         height: auto;
+        position: relative;
+        border-radius: 100px;
+        padding: 5px;
+        color: black;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+      }
+
+      #desc a {
+        border: #e8934b;
+      }
+    </style>
+    <style>
+      /* footer */
+      footer {
+        background-color: white;
+        display: inline-flex;
+      }
+      .instagram {
+        text-decoration: none;
+        height: 50px;
+      }
+
+      .twitter {
+        text-decoration: none;
+        height: 50px;
+      }
+
+      .facebook {
+        text-decoration: none;
+        height: 50px;
       }
     </style>
   </head>
+
   <body>
     <main>
       <header>
         <div id="logo">
-          <img
-            src="images/Central PA Attractions Logo.png"
-            alt="Central PA Attractions Logo"
-          />
+          <a href="#"
+            ><img
+              src="images/Central PA Attractions Logo.png"
+              alt="Central PA Attractions Logo"
+            />
+          </a>
         </div>
         <nav id="nav">
           <ul>
@@ -143,20 +201,23 @@
         </nav>
       </header>
 
-      <div id="hero">
-        <h1>Have a Penn-tastic time!</h1>
+      <div class="flex-container">
+        <img src="images/Main Pic.jpg" alt="" />
+        <div id="hero">
+          <h1>Have a Penn-tastic time!</h1>
+        </div>
       </div>
 
       <div id="content">
         <h2>Welcome to Central PA Attractions!</h2>
-        <p>
+        <p style="text-align: center" style="color: #15578a">
           Explore the many attractions that Central Pennsylvania has to offer
         </p>
 
         <div class="card-holder">
           <!-- Card -->
           <div class="card">
-            <img src="https://placehold.co/530x320" alt="" />
+            <img src="images/Hershey Park.jpg" alt="Rollercoaster" />
             <div class="desc">
               <h3>Hersheypark</h3>
               <p>
@@ -177,50 +238,180 @@
 
           <!-- Card -->
           <div class="card">
-            <img src="https://placehold.co/530x320" alt="" />
+            <img
+              src="images/Gettysburg National Military Park.jpg"
+              alt="Gettysburg National Military Park"
+            />
             <div class="desc">
-              <h3>Hersheypark</h3>
+              <h3>Gettysburg National Military Park</h3>
               <p>
-                A renowned amusement park featuring exciting rides, live
-                entertainment, and an opportunity to learn about
-                chocolate-making at Hershey's Chocolate World.
+                Site of the pivotal Battle of Gettysburg during the Civil War,
+                offering guided tours, historic monuments, and a visitor center
+                with exhibits.
               </p>
-              <a href="#">Visit Website</a>
+              <a
+                class="button"
+                href="http://www.nps.gov/gett"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
             </div>
           </div>
           <!-- /Card -->
 
           <!-- Card -->
           <div class="card">
-            <img src="https://placehold.co/530x320" alt="" />
+            <img
+              src="images/Pennsylvania State Capitol.jpg"
+              alt="Rollercoaster"
+            />
             <div class="desc">
-              <h3>Hersheypark</h3>
+              <h3>Pennsylvania State Capitol</h3>
               <p>
-                A renowned amusement park featuring exciting rides, live
-                entertainment, and an opportunity to learn about
-                chocolate-making at Hershey's Chocolate World.
+                An impressive architectural gem in Harrisburg showcasing
+                exquisite artwork, stunning interiors, and guided tours to learn
+                about the state's government and history.
               </p>
-              <a href="#">Visit Website</a>
+              <a
+                class="button"
+                href="http://www.pacapitol.com/"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
             </div>
           </div>
           <!-- /Card -->
 
           <!-- Card -->
           <div class="card">
-            <img src="https://placehold.co/530x320" alt="" />
+            <img src="images/Raystown Lake.jpg" alt="Rollercoaster" />
             <div class="desc">
-              <h3>Hersheypark</h3>
+              <h3>Raystown Lake</h3>
               <p>
-                A renowned amusement park featuring exciting rides, live
-                entertainment, and an opportunity to learn about
-                chocolate-making at Hershey's Chocolate World.
+                A scenic reservoir near Huntingdon, offering boating, fishing,
+                hiking, and camping amid picturesque landscapes and water
+                activities.
               </p>
-              <a href="#">Visit Website</a>
+              <a
+                class="button"
+                href="http://www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <img
+              src="images/Railroad Museum of Pennsylvania.jpg"
+              alt="Rollercoaster"
+            />
+            <div class="desc">
+              <h3>Railroad Museum of Pennsylvania</h3>
+              <p>
+                Located in Strasburg, this museum boasts an extensive collection
+                of vintage locomotives, rail cars, and exhibits, showcasing the
+                rich history of railroading.
+              </p>
+              <a
+                class="button"
+                href="http://www.rrmuseumpa.org/"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <img src="images/Central Market York.jpg" alt="Rollercoaster" />
+            <div class="desc">
+              <h3>Central Market York</h3>
+              <p>
+                The oldest continuously operating farmers' market in the U.S.,
+                offering a bustling atmosphere, local produce, crafts, and
+                diverse food vendors.
+              </p>
+              <a
+                class="button"
+                href="http://www.centralmarketyork.com/"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <img
+              src="images/Pine Grove Furnace State Park.jpg"
+              alt="Rollercoaster"
+            />
+            <div class="desc">
+              <h3>Pine Grove Furnace State Park</h3>
+              <p>
+                Serving as the "Gateway to the Appalachian Trail," this park
+                offers hiking, picnicking, and swimming opportunities, along
+                with historic features and natural beauty.
+              </p>
+              <a
+                class="button"
+                href="http://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Card -->
+          <div class="card">
+            <img src="images/Worlds End State Park.jpg" alt="Rollercoaster" />
+            <div class="desc">
+              <h3>Worlds End State Park</h3>
+              <p>
+                Situated in the Endless Mountains, this park is known for its
+                rugged beauty, with hiking trails, waterfalls, and breathtaking
+                views of the Loyalsock Creek Gorge.
+              </p>
+              <a
+                class="button"
+                href="http://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark"
+                target="_blank"
+                rel="nofollow"
+                >Visit Website</a
+              >
             </div>
           </div>
           <!-- /Card -->
         </div>
       </div>
+      <footer>
+        <div id="copyright">
+          <p>&copy;PA Attractions</p>
+        </div>
+        <div id="icons">
+          <a href="https://www.instagram.com/" target="_blank" rel="nofollow"
+            ><img class="instagram" src="images/instagram-png.png"
+          /></a>
+          <a href="https://twitter.com/" target="_blank" rel="nofollow"
+            ><img class="twitter" src="images/square-x-twitter-png.png"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="nofollow"
+            ><img class="facebook" src="images/square-facebook-png.png"
+          /></a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
