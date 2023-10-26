@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | World of Poker</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #primary-nav {
+        background-color: rgb(247, 229, 245);
+      }
+      #primary-nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      #primary-nav li a {
+        border: 1px solid black;
+        color: #fff;
+        background-color: mediumslateblue;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+      }
+      #primary-nav li a:hover {
+        background-color: darkslategrey;
+      }
+      #toggle-nav {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      }
+      @media (max-width: 767px) {
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        #toggle-nav {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body id="home">
+    <button id="toggle-nav">&#9776;</button>
+    <h1>Welcome to the World of Poker</h1>
+    <nav id="primary-nav" role="navigation">
+      <div class="inner">
+        <ul>
+          <li><a class="index" href="index.html">Home</a></li>
+          <li>
+            <a class="how-to-play" href="how-to-play.html">How To Play</a>
+          </li>
+          <li>
+            <a class="poker-variants" href="poker-variants.html"
+              >Poker Variants</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="flex-container">
+      <div id="hero-image">
+        <img
+          src="images/michal-parzuchowski-U8n_O7rEq7o-unsplash.jpg"
+          alt="zoomed in imgage of poker cards and chips"
+        />
+      </div>
+      <p>
+        <strong>Introduction:</strong> Poker is a timeless card game that has
+        captivated players for generations. Whether you're a beginner looking to
+        learn the basics or a seasoned player seeking to refine your skills,
+        this microsite is your comprehensive guide to the world of poker. Join
+        us on a journey into the exciting realm of bluffs, bets, and strategic
+        gameplay.
+      </p>
+    </div>
+    <p>
+      <strong>What is Poker?</strong> Poker is a family of card games that
+      combines elements of strategy, skill, and psychology. Players compete to
+      win chips or money by forming the best possible hand, or by convincing
+      opponents to fold their hands.
+    </p>
+
+    <p><strong>Basic Poker Concepts:</strong></p>
+    <ol>
+      <li>
+        <strong>Hands:</strong>Poker hands are ranked from highest to lowest,
+        with combinations like Royal Flush and Straight Flush being the best.
+      </li>
+      <li>
+        <strong>Betting:</strong>Players take turns placing bets or checking,
+        with options to raise or fold.
+      </li>
+      <li>
+        <strong>Blinds:</strong>In many variants, small and big blinds are
+        forced bets that initiate the betting rounds.
+      </li>
+      <li>
+        <strong>Community Cards:</strong>Some poker variants use community cards
+        that are shared among players.
+      </li>
+    </ol>
+
+    <p>
+      <strong>History:</strong> Poker's origins date back to the early 19th
+      century in the United States. It has since evolved into a global
+      phenomenon with numerous variants, each with its own unique rules and
+      strategies.
+    </p>
+    <p><strong>Benefits of Playing Poker:</strong></p>
+    <ul>
+      <li>Strategic thinking and decision-making.</li>
+      <li>Reading opponents and developing poker faces.</li>
+      <li>Probability and math skills.</li>
+      <li>Social interaction and camaraderie.</li>
+    </ul>
+
+    <p><a href="how-to-play.html">Next Page: How to Play Texas Hold'em</a></p>
+  </body>
+  <script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNav = document.getElementById("toggle-nav");
+      toggleNav.innerHTML = "&#9776;";
+
+      // Tell button to do something on click
+      toggleNav.addEventListener("click", () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle("nav-open");
+        toggleNav.innerHTML = document.body.classList.contains("nav-open")
+          ? "&#x2715"
+          : "&#9776;";
+      });
+    };
+  </script>
+</html>
