@@ -67,6 +67,9 @@ header {
   margin-left: 5px;
   margin-top: -12px;
 }
+#home-button:hover {
+  background-color: #335842;
+}
 #title {
   width: 830px;
   margin: 0 auto;
@@ -107,6 +110,9 @@ header {
   font-weight: 700;
   font-size: 20px;
 }
+#nav li a:hover {
+  background-color: #25243c;
+}
 /* flex container */
 .flex-container {
   display: flex;
@@ -130,13 +136,42 @@ header {
   width: 659px;
   background-color: #baf2ef;
 }
+/* start button */
+#start-button {
+  width: 288px;
+  height: 53px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #49478f;
+  border-radius: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+#start-button a {
+  text-decoration: none;
+  font-family: Radio Canada;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+#start-button:hover {
+  background-color: #25243c;
+}
 #left-arrow-button img {
   position: relative;
   margin-right: auto;
 }
+#left-arrow-button img:hover {
+  background-color: #baf2ef;
+}
 #right-arrow-button img {
   position: relative;
   margin-left: auto;
+}
+#right-arrow-button img:hover {
+  background-color: #baf2ef;
 }
 p {
   text-align: center;
