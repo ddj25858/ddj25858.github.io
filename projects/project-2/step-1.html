@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to Fold a Shirt Like a Burrito</title>
+    <title>Step 1 | How to Fold a Shirt Like a Burrito</title>
     <link
       rel="icon"
       type="image/png"
@@ -16,118 +16,15 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Radio+Canada:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
     <style>
-      /* text */
-      h1 {
-        font-family: Josefin Sans;
-        font-weight: 700;
-      }
-      h2 {
-        font-family: Radio Canada;
-        font-weight: 500;
-      }
-
-      h4 {
-        font-family: Radio Canada;
-        font-weight: 600px;
-        margin: 0 auto;
-        text-align: center;
-        color: white;
-      }
-
-      main {
-        width: 1000px;
-        height: 795px;
-        margin: 0 auto;
-        border: 1px solid black;
-      }
-      header {
-        background-color: #49478f;
-        display: flex;
-        justify-content: space-between;
-      }
-      header #home-button {
-        width: 106px;
-        height: 35px;
-        background-color: #70bf8f;
-        margin-left: 17px;
-        margin-top: 22px;
-        text-decoration: none;
-      }
-      header #home-button a {
-        text-decoration: none;
-        color: white;
-      }
-      header #title {
-        width: 830px;
-        margin: 0 auto;
-        text-decoration: none;
-        word-wrap: break-word;
-        color: #baf2ef;
-        text-align: center;
-      }
-      #nav {
-        display: inline-block;
-        text-align: center;
-      }
-      #nav-background {
-        width: 1000px;
-        height: 83px;
-        background-color: #aaa7f6;
-      }
-      #nav ul {
-        list-style: none;
-        background: none;
-        text-align: center;
-        font-family: Radio Canada;
-        font-weight: 700;
-        color: #f9ffb1;
-      }
-      #nav li {
-        display: inline-block;
-        background-color: #8f4761;
-        width: 106px;
-        height: 35px;
-        margin: 15px;
-        text-align: center;
-      }
-      #nav li a {
-        text-align: center;
-        margin: 15px;
-        text-decoration: none;
-        text-align: center;
-      }
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
-      }
-      .card {
-        background-color: white;
-      }
-
-      .card h2 {
-        text-align: center;
-        margin: 12px 85px 38px 85px;
-      }
-      .card img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 12px;
-        width: 659px;
-        background-color: #baf2ef;
-      }
-      #right-arrow-button img {
-        position: relative;
-        margin-left: auto;
-      }
     </style>
   </head>
-  <body>
+  <body id="step-1">
     <main>
       <header>
         <div id="home-button">
-          <h4><a href="index.html">Home</a></h4>
+          <a href="index.html">Home</a>
         </div>
         <div id="title"><h1>How to Fold a Shirt Like a Burrito</h1></div>
       </header>
@@ -143,28 +40,35 @@
           </ul>
         </nav>
       </div>
-      <div class="card">
-        <h2>
-          Want to save space when traveling? Or just fold your shirt into the
-          shape of a burrito for fun? Well the burrito roll is the right method
-          for you!
-        </h2>
-        <img
-          src="images/Home Page.png"
-          alt="Illustration of a t-shirt that is turned into a folded burrito"
-        />
-        
       <div class="flex-container">
+        <div id="left-arrow-button">
+          
+            <img
+              src="images/Disabled Left Arrow.png"
+              alt="An arrow pointing to the right"
+          />
+        </div>
+        
+
+        <div class="card">
+          <h2>
+            Step 1: Lay your shirt on a flat surface
+          </h2>
+          <img
+            src="images/Step 1.png"
+            alt="Illustration of a t-shirt laid on a flat surface"
+          />
+          <p>You can use any flat surface that's clean. Make sure the shirt is right-side up and smooth out and try to smooth out any wrinkles.
+          </p>
+          </div>
         <div id="right-arrow-button">
-          <a href="step-1.html"
+          <a href="step-2.html"
             ><img
               src="images/Right Arrow.png"
               alt="An arrow pointing to the right"
           /></a>
         </div>
-      </div>
-      <p>You can use any flat surface that's clean. Make sure the shirt is right-side up and smooth out and try to smooth out any wrinkles.
-    </p>
+      
     </main>
   </body>
 </html>
