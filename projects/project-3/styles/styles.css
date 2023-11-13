@@ -20,6 +20,11 @@ header {
   color: #fdffa9;
   padding-left: 38px;
 }
+#characters nav li:nth-child(1) a,
+#reviews nav li:nth-child(2) a,
+#author-bio nav li:nth-child(3) a {
+  color: #fdffa9;
+}
 #nav {
   margin-right: 20px;
 }
@@ -55,6 +60,7 @@ header {
   background-color: white;
 }
 @media (max-width: 1199px) {
+  #author-bio,
   main,
   header {
     width: 100%;
