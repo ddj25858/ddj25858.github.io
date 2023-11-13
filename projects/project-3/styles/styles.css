@@ -89,3 +89,10 @@ header {
     display: block;
   }
 }
+h1 {
+  padding: 20px;
+  font-family: Sora;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1e5a6c;
+}
