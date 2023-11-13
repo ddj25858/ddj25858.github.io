@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author Bio | Alice in Wonderland</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <style>
+      h1 {
+        font-family: Sora;
+        font-weight: 700;
+        font-size: 30px;
+        color: #1e5a6c;
+      }
+
+      #character-container {
+        display: inline-flex;
+        flex-direction: row;
+        font-family: Jost;
+        padding: 20px;
+      }
+      #character-img {
+        border: 5px solid #b5a3e5;
+      }
+
+      @media (max-width: 767px) {
+        #character-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body id="author-bio">
+    <button id="toggle-nav">&#9776;</button>
+    <main>
+      <header>
+        <div id="home-button">
+          <a href="index.html">Alice in Wonderland</a>
+        </div>
+
+        <nav id="nav" role="navigation">
+          <div class="inner">
+            <ul>
+              <li><a href="characters.html">Characters</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="author-bio.html">Author Bio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <h1>Author Bio</h1>
+
+      <div id="author-card">
+        <div id="author-img">
+          <img src="images/lewis-caroll.png" alt="Image of Lewis Caroll" />
+        </div>
+        <div id="author-desc">
+          <h2>
+            “If you don't know where you are going, any road will get you
+            there.”
+          </h2>
+          The curious young protagonist of this story. This courteous,
+          imaginative, and curious 7-year old starts off bored while reading a
+          book, until a strange white rabbit appears. She follows it down its
+          rabbit hole and goes on an adventure like no other.
+        </div>
+
+        <p>
+          Lewis Carroll was the pen name of Charles Lutwidge Dodgson, a renowned
+          English writer, mathematician, logician, and photographer. He was born
+          on January 27, 1832, in Daresbury, Cheshire, England, and passed away
+          on January 14, 1898, in Guildford, Surrey, England. Carroll is best
+          known for his imaginative literary works, particularly "Alice's
+          Adventures in Wonderland" and its sequel, "Through the Looking-Glass."
+          <br />It was during Dodgson's time at Oxford that he began developing
+          the stories that would later become "Alice's Adventures in
+          Wonderland." In 1862, while on a boating trip with the Liddell family,
+          Dodgson told a tale to entertain the children, including Alice
+          Liddell. Encouraged by the positive reception, he later expanded the
+          story into a manuscript, and it was published in 1865 under the
+          pseudonym Lewis Carroll. The book's whimsical characters, imaginative
+          plot, and clever wordplay made it an instant success and a beloved
+          classic of children's literature.
+        </p>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      ></script>
+
+      <script>
+        // Perform this after the window has loaded
+        window.onload = () => {
+          // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+          const toggleNav = document.getElementById("toggle-nav");
+          toggleNav.innerHTML = "&#9776;";
+
+          // Tell button to do something on click
+          toggleNav.addEventListener("click", () => {
+            // toggle the body's class attribute
+            document.body.classList.toggle("nav-open");
+            toggleNav.innerHTML = document.body.classList.contains("nav-open")
+              ? "&#x2715"
+              : "&#9776;";
+          });
+        };
+      </script>
+    </main>
+  </body>
+</html>

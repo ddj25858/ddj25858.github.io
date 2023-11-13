@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters | Alice in Wonderland</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <style>
+      h1 {
+        font-family: Sora;
+        font-weight: 700;
+        font-size: 30px;
+        color: #1e5a6c;
+      }
+
+      #character-container {
+        display: flex;
+        flex-direction: row;
+        font-family: Jost;
+        padding: 20px;
+      }
+      #character-img {
+        border: 5px solid #b5a3e5;
+      }
+      #character-img img {
+        max-width: 100%;
+      }
+      #character-desc {
+        padding: 15px;
+        background-color: #64568a;
+        border-radius: 0 0 72px 0;
+      }
+      figcaption h2 {
+        color: #fdffa9;
+        font-weight: 600;
+        font-size: 36px;
+      }
+      figcaption {
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      @media (max-width: 767px) {
+        #character-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body id="characters">
+    <button id="toggle-nav">&#9776;</button>
+    <main>
+      <header>
+        <div id="home-button">
+          <a href="index.html">Alice in Wonderland</a>
+        </div>
+
+        <nav id="nav" role="navigation">
+          <div class="inner">
+            <ul>
+              <li><a href="characters.html">Characters</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="author-bio.html">Author Bio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <h1>Meet the characters!</h1>
+      <figure id="character-container">
+        <div id="character-img">
+          <img
+            src="images/alice.png"
+            alt="Illustration of Alice from Alice in Wonderland"
+            style="width: 100%"
+          />
+        </div>
+        <div id="character-desc">
+          <figcaption>
+            <h2>Alice</h2>
+            The curious young protagonist of this story. This courteous,
+            imaginative, and curious 7-year old starts off bored while reading a
+            book, until a strange white rabbit appears. She follows it down its
+            rabbit hole and goes on an adventure like no other.
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure id="character-container">
+        <div id="character-img">
+          <img
+            src="images/white-rabbit.png"
+            alt="Illustration of the White Rabbit from Alice in Wonderland"
+            style="width: 100%"
+          />
+        </div>
+        <div id="character-desc">
+          <figcaption>
+            <h2>The White Rabbit</h2>
+            Always on the run and in a rush. This old rabbit is almost always in
+            a panic, taking each hop with a sense of purpose and anxiety.
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure id="character-container">
+        <div id="character-img">
+          <img
+            src="images/cheshire-cat.png"
+            alt="Illustration of the Cheshire cat from Alice in Wonderland"
+            style="width: 100%"
+          />
+        </div>
+        <div id="character-desc">
+          <figcaption>
+            <h2>The Cheshire Cat</h2>
+            This cat loves to disappear with a smile. At one point Alice
+            encounters this mischievous and mysterious creature and it engages
+            in perplexing conversation with it. It always seems to have the
+            upper hand and can get out any situation.
+          </figcaption>
+        </div>
+      </figure>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      ></script>
+
+      <script>
+        // Perform this after the window has loaded
+        window.onload = () => {
+          // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+          const toggleNav = document.getElementById("toggle-nav");
+          toggleNav.innerHTML = "&#9776;";
+
+          // Tell button to do something on click
+          toggleNav.addEventListener("click", () => {
+            // toggle the body's class attribute
+            document.body.classList.toggle("nav-open");
+            toggleNav.innerHTML = document.body.classList.contains("nav-open")
+              ? "&#x2715"
+              : "&#9776;";
+          });
+        };
+      </script>
+    </main>
+  </body>
+</html>

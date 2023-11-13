@@ -16,99 +16,48 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        width: 1200px;
-        margin: 0 auto;
-      }
       /* text start*/
-      #home-button a {
-        text-decoration: none;
-        font-family: Kreon;
-        font-weight: 700;
-        font-size: 28px;
-        color: #fdffa9;
-        padding-left: 38px;
+
+      .card {
+        align-content: center;
+        border: none;
+      }
+      .card-body,
+      #footer-text {
+        font-family: Jost;
       }
       .card-title {
         text-align: center;
-        font-family: Jost;
         font-weight: 800;
         font-size: 48px;
         padding-bottom: 50px;
       }
-
       .card-text {
-        font-family: Jost;
         font-weight: 400px;
         font-size: 24px;
       }
+      #footer-text {
+        font-weight: 400;
+        font-size: 30px;
+      }
       /* text end */
-      header {
-        background-color: #64568a;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      #nav {
-        margin-right: 20px;
-      }
-      #nav ul {
-        list-style: none;
-        text-decoration: none;
-        /*
-        margin: 0;
-        padding: 0;
-        */
-      }
-      #nav li {
-        display: inline-block;
-      }
-      #nav a {
-        text-decoration: none;
-        display: block;
-        padding: 20px;
-        color: #d8cff4;
-        font-family: Sora;
-        font-weight: 600;
-        font-size: 18px;
-      }
-      #nav li a:hover {
-        background-color: #fdffa9;
-      }
-      #toggle-nav {
-        position: absolute;
-        right: 1em;
-        top: 1em;
-        display: none;
-      }
-      @media (max-width: 767px) {
-        .main {
-          width: 100%;
-        }
 
-        #nav {
-          display: grid;
-          grid-template-rows: 0fr;
-          transition: grid-template-rows 0.5s ease-out;
-        }
-        body.nav-open #nav {
-          grid-template-rows: 1fr;
-        }
-        .inner {
-          overflow: hidden;
-        }
-        #nav li {
-          display: block;
-        }
-        #toggle-nav {
-          display: block;
-        }
+      footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+      }
+      #buy-buttons a {
+        background-color: #d8cff4;
+        padding: 30px;
+      }
+      #buy-buttons a:hover {
+        background-color: #64568a;
       }
     </style>
   </head>
@@ -136,13 +85,14 @@
             <img
               src="images/book-cover.png"
               class="img-fluid rounded-start"
-              alt="..."
+              alt="Image of the Alice in Wonderland book cover original 1865 edition"
             />
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">
-                Take a magical journey into Lewis Carolls' “Alice in Wonderland”
+                Take a magical journey into one of Lewis Caroll's classic
+                stories
               </h5>
               <p class="card-text">
                 In "Alice in Wonderland," young Alice follows a white rabbit
@@ -153,19 +103,34 @@
                 Alice navigates through a topsy-turvy realm where logic is often
                 turned upside down, and nothing is as it seems.
               </p>
-              <!-- not needed, might delete la
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-              -->
             </div>
           </div>
         </div>
       </div>
       <footer>
         <div id="footer-text"><p>Available for purchase at:</p></div>
+        <div id="buy-buttons">
+          <a
+            href="https://www.amazon.com/Alice-Wonderland-Original-Complete-Illustrations/dp/B0948LPG76"
+            target="_blank"
+            rel="nofollow"
+            ><img src="images/amazon-logo.png" alt="Image of amazon logo"
+          /></a>
+          <a
+            href="https://www.booksamillion.com/p/Alices-Adventures-Wonderland/Lewis-Carroll/9783959401807?id=8993063231983"
+            target="_blank"
+            rel="nofollow"
+            ><img src="images/bam-logo.png" alt="Image of Books a Million logo"
+          /></a>
+          <a
+            href="https://www.barnesandnoble.com/w/alices-adventures-in-wonderland-lewis-carroll/1123104603?ean=9783959401036"
+            target="_blank"
+            rel="nofollow"
+            ><img
+              src="images/b&n-logo.png"
+              alt="Image of Barnes and Nonble logo"
+          /></a>
+        </div>
       </footer>
 
       <script
