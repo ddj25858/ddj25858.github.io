@@ -16,14 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
-      /* text start*/
-
       .card {
         align-content: center;
         border: none;
+        padding: 20px;
       }
       .card-body,
       #footer-text {
@@ -43,7 +49,6 @@
         font-weight: 400;
         font-size: 30px;
       }
-      /* text end */
 
       footer {
         display: flex;
@@ -52,12 +57,24 @@
         align-items: center;
         padding: 30px;
       }
-      #buy-buttons a {
+      .buy-buttons a {
         background-color: #d8cff4;
         padding: 30px;
       }
-      #buy-buttons a:hover {
+      .buy-buttons a:hover {
         background-color: #64568a;
+      }
+      @media (max-width: 1199px) {
+        footer {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        footer {
+          flex-direction: column;
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -109,7 +126,7 @@
       </div>
       <footer>
         <div id="footer-text"><p>Available for purchase at:</p></div>
-        <div id="buy-buttons">
+        <div class="buy-buttons">
           <a
             href="https://www.amazon.com/Alice-Wonderland-Original-Complete-Illustrations/dp/B0948LPG76"
             target="_blank"

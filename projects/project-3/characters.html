@@ -16,21 +16,29 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
-      #character-container {
+      .character-container {
         display: flex;
         flex-direction: row;
         font-family: Jost;
         padding: 20px;
       }
-      #character-img {
+      .character-img {
         border: 5px solid #b5a3e5;
       }
-      #character-img img {
-        max-width: 100%;
+      .character-img img {
+        min-width: 60%;
       }
+
       #character-desc {
         padding: 15px;
         background-color: #64568a;
@@ -46,9 +54,19 @@
         font-weight: 400;
         font-size: 18px;
       }
+      @media (max-width: 1199px) {
+        .character-container {
+          width: 100%;
+        }
+      }
+
       @media (max-width: 767px) {
-        #character-container {
+        .character-container {
+          width: 100%;
           flex-direction: column;
+        }
+        .character-img img {
+          width: 100%;
         }
       }
     </style>
@@ -72,12 +90,11 @@
         </nav>
       </header>
       <h1>Meet the characters!</h1>
-      <figure id="character-container">
-        <div id="character-img">
+      <figure class="character-container">
+        <div class="character-img">
           <img
             src="images/alice.png"
             alt="Illustration of Alice from Alice in Wonderland"
-            style="width: 100%"
           />
         </div>
         <div id="character-desc">
@@ -91,12 +108,11 @@
         </div>
       </figure>
 
-      <figure id="character-container">
-        <div id="character-img">
+      <figure class="character-container">
+        <div class="character-img">
           <img
             src="images/white-rabbit.png"
             alt="Illustration of the White Rabbit from Alice in Wonderland"
-            style="width: 100%"
           />
         </div>
         <div id="character-desc">
@@ -108,12 +124,11 @@
         </div>
       </figure>
 
-      <figure id="character-container">
-        <div id="character-img">
+      <figure class="character-container">
+        <div class="character-img">
           <img
             src="images/cheshire-cat.png"
             alt="Illustration of the Cheshire cat from Alice in Wonderland"
-            style="width: 100%"
           />
         </div>
         <div id="character-desc">

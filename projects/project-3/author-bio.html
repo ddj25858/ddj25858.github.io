@@ -16,10 +16,17 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
-      #author-card {
+      .author-card {
         display: inline-flex;
         flex-direction: row;
         padding: 20px;
@@ -27,19 +34,34 @@
       h2 {
         padding: 20px;
         font-family: Sora;
+        font-size: 40px;
       }
       #author-img {
         border: 5px solid #d8cff4;
       }
-      #author-desc {
+      #author-quote {
         font-family: Sora;
         color: #64568a;
       }
+      #body-text {
+        padding: 20px;
+      }
+
+      @media (max-width: 1199px) {
+        .author-card,
+        #body-text {
+          width: 100%;
+        }
+      }
 
       @media (max-width: 767px) {
-        #author-card,
-        p {
+        .author-card,
+        #body-text {
           flex-direction: column;
+          width: 100%;
+        }
+        #author-img {
+          width: auto;
         }
       }
     </style>
@@ -64,11 +86,11 @@
       </header>
       <h1>Author Bio</h1>
 
-      <div id="author-card">
+      <div class="author-card">
         <div id="author-img">
           <img src="images/lewis-caroll.png" alt="Image of Lewis Caroll" />
         </div>
-        <div id="author-desc">
+        <div id="author-quote">
           <h2>
             “If you don't know where you are going, any road will get you
             there.”
@@ -76,7 +98,7 @@
           </h2>
         </div>
       </div>
-      <p>
+      <p id="body-text">
         Lewis Carroll was the pen name of Charles Lutwidge Dodgson, a renowned
         English writer, mathematician, logician, and photographer. He was born
         on January 27, 1832, in Daresbury, Cheshire, England, and passed away on

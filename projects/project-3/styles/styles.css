@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+/*Nav_______________________________________________*/
 #home-button a {
   text-decoration: none;
   font-family: Kreon;
@@ -31,10 +32,6 @@ header {
 #nav ul {
   list-style: none;
   text-decoration: none;
-  /*
-    margin: 0;
-    padding: 0;
-    */
 }
 #nav li {
   display: inline-block;
@@ -50,22 +47,23 @@ header {
   text-align: center;
 }
 #nav li a:hover {
-  background-color: #fdffa9;
+  color: #fdffa9;
 }
 #toggle-nav {
   position: absolute;
   right: 1em;
   top: 1em;
   display: none;
-  background-color: white;
+  background-color: #d8cff4;
 }
+/*Responsive______________________________________________*/
 @media (max-width: 1199px) {
-  #author-bio,
   main,
   header {
     width: 100%;
   }
 }
+
 @media (max-width: 767px) {
   main {
     width: 100%;
@@ -89,6 +87,7 @@ header {
     display: block;
   }
 }
+/*Text______________________________________________*/
 h1 {
   padding: 20px;
   font-family: Sora;

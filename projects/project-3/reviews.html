@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,600&family=Kreon:wght@700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="styles/styles.css" />
 
     <style>
@@ -23,8 +30,7 @@
         margin: 0 auto;
       }
 
-      #review-holder {
-        width: 1065px;
+      .review-holder {
         font-family: Jost;
         padding: 20px;
       }
@@ -57,8 +63,12 @@
 
       @media (max-width: 767px) {
         .review-container,
-        #review-holder {
+        .review-holder {
           flex-direction: column;
+          width: 100%;
+        }
+        #review-stars {
+          width: auto;
         }
       }
     </style>
@@ -83,7 +93,7 @@
       </header>
       <h1>Reviews</h1>
       <div class="review-container">
-        <div id="review-holder">
+        <div class="review-holder">
           <div id="review-stars">
             <ul>
               <li>
@@ -110,7 +120,7 @@
           </div>
         </div>
 
-        <div id="review-holder">
+        <div class="review-holder">
           <div id="review-stars">
             <ul>
               <li>
@@ -137,7 +147,7 @@
           </div>
         </div>
 
-        <div id="review-holder">
+        <div class="review-holder">
           <div id="review-stars">
             <ul>
               <li>
