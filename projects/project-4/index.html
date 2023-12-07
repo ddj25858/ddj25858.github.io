@@ -13,73 +13,189 @@
     />
     <!--CSS Link------------->
     <link rel="stylesheet" href="styles/styles.css" />
-    <!--Bootstrap------------->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body id="home"></body>
-  <button id="toggle-nav">&#9776;</button>
-  <main>
-    <header>
-      <div id="home-button">
-        <a href="index.html">Brews & Bonds</a>
-      </div>
 
-      <nav id="nav" role="navigation">
-        <div class="inner">
-          <ul>
-            <li><a href="schedule.html">Menu</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="visit-us.html">Visit Us</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="hero-image">
-      <img src="images/home-page-hero.png" alt="" />
-      <div class="hero-text">Sharing bonds and smiles</div>
+    <style>
+      .card {
+        display: inline-flex;
+        flex-direction: row;
+        align-content: center;
+        padding: 20px;
+        font-family: Poppins;
+      }
+      .card-img {
+        width: 100%;
+      }
+      .card-desc {
+        align-content: center;
+        padding-left: 50px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 36px;
+      }
+      .card-body-text {
+        font-weight: 400;
+        font-size: 28px;
+      }
+      .card-button:hover {
+        color: #7cc482;
+      }
+      a.button {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: #214324;
+        padding: 10px;
+        border-radius: 40px;
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+      }
+      @media (max-width: 1299px) {
+        .card {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .card,
+        .card-desc {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body id="home">
+    <div id="hamburger-icon">
+      <a href=""><i class="fa-solid fa-bars"></i></a>
     </div>
-    <h2>Here at Brews & Bonds, we like to make our customers feel welcome</h2>
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="images/menu-page-coffee.png"
-            class="img-fluid rounded-start"
-            alt="..."
-          />
+
+    <main>
+      <header>
+        <div class="nav-row">
+          <div id="home-button">
+            <a href="index.html">Brews & Bonds</a>
+          </div>
+
+          <nav id="nav" role="navigation">
+            <div class="inner">
+              <ul>
+                <li><a href="schedule.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="visit-us.html">Visit Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+      </header>
+      <div id="hero-image">
+        <img src="images/home-page-hero.png" alt="" />
+        <div id="hero-text">Sharing bonds and smiles</div>
+      </div>
+      <h2>Here at Brews & Bonds, we like to make our customers feel welcome</h2>
+      <div class="card-holder">
+        <!--Card--------------------------------->
+        <div class="card">
+          <div class="card-img">
+            <div id="menu-img">
+              <img src="images/home-page-menu.png" alt="" />
+            </div>
+          </div>
+          <div class="card-desc">
+            <h3>Check out our menu</h3>
+            <p class="card-body-text">
+              We offer a variety of coffee and teas that are sure to provide the
+              energy and comfort that you need. Ranging from our velvety
+              espressos to our savory sandwiches, all made from the freshest
+              ingredients.
             </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            <div class="card-button">
+              <a href="menu.html" class="button">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="card">
+          <div class="card-img">
+            <div id="menu-img">
+              <img src="images/home-page-schedule.png" alt="" />
+            </div>
+          </div>
+          <div class="card-desc">
+            <h3>We offer fun activities throughout the week!</h3>
+            <p class="card-body-text">
+              Looking for something fun to do? Participate in our weekly
+              activities held throughout the week. Don't miss a chance to create
+              to new bonds!
             </p>
+            <div class="card-buttom">
+              <a href="schedule.html" class="button">View schedule</a>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="card">
+          <div class="card-img">
+            <div id="menu-img">
+              <img src="images/home-page-about.png" alt="" />
+            </div>
+          </div>
+          <div class="card-desc">
+            <h3>Find out more about us!</h3>
+            <p class="card-body-text">
+              Read about the bond that started it all! Brews & Bonds was founded
+              by Jacob and Emily, sharing a love for coffee and the boldness to
+              start to start a business.
+            </p>
+            <div class="card-button">
+              <a href="about-us.html" class="button">Learn more</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="row"></div>
-      <div>&copy;Brews & Bonds</div>
-      <div>Hours</div>
-      <div>Number</div>
-    </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </main>
+      <footer>
+        <div class="footer-row"></div>
+        <div id="copyright">&copy;Brews & Bonds</div>
+        <div id="hours">
+          <i class="fa-regular fa-clock"></i>
+          <div id="hours-text">Monday - Sunday 7am-11pm</div>
+        </div>
+        <div id="contact">
+          <div id="phone-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div id="phone-number">
+            <a href="tel:248-434-5508">(248) 434-5508</a>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="https://kit.fontawesome.com/4cb488fd6b.js"
+        crossorigin="anonymous"
+      ></script>
+      <!--Card-------------------------------
+    <script>
+      // Perform this after the window has loaded
+      window.onload = () => {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        const toggleNav = document.getElementById("toggle-nav");
+        toggleNav.innerHTML = "&#9776;";
+
+        // Tell button to do something on click
+        toggleNav.addEventListener("click", () => {
+          // toggle the body's class attribute
+          document.body.classList.toggle("nav-open");
+          toggleNav.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+    </script>
+    --></main>
+  </body>
 </html>

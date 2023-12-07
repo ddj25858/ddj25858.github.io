@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #drink-menu {
+        width: 300px;
+      }
+      #drink-menu ul {
+        list-style-type: none;
+      }
+      #drink-menu li {
+        background-color: lightblue;
+        margin-bottom: 10px;
+      }
+      #drink-menu li > span {
+        background-color: lightgreen;
+        float: right;
+      }
+
+      .dl-example {
+        background-color: aqua;
+        width: 300px;
+      }
+      .dl-example dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .dl-example dt {
+        background-color: mediumorchid;
+        width: 50%;
+      }
+      .dl-example dd {
+        margin: 0; /* eliminates native left margin */
+        background-color: darkgrey;
+        width: 50%;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="drink-menu">
+      <ul>
+        <li>Espresso <span>$2.50</span></li>
+        <li>Americano <span>$3.50</span></li>
+      </ul>
+    </div>
+
+    <div class="dl-example">
+      <dl>
+        <dt>Espresso</dt>
+        <dd>$2.50</dd>
+
+        <dt>Americano</dt>
+        <dd>$3.50</dd>
+      </dl>
+    </div>
+  </body>
+</html>
