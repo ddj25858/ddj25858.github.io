@@ -22,8 +22,8 @@
         padding: 20px;
         font-family: Poppins;
       }
-      .card-img {
-        width: 100%;
+      .card-img img {
+        min-width: 60%;
       }
       .card-desc {
         align-content: center;
@@ -48,14 +48,17 @@
         text-align: center;
       }
       @media (max-width: 1299px) {
+        .card-holder,
         .card {
           width: 100%;
         }
       }
 
       @media (max-width: 767px) {
+        .card-holder,
         .card,
-        .card-desc {
+        .card-desc,
+        .card-body-text {
           flex-direction: column;
           width: 100%;
         }
@@ -95,9 +98,7 @@
         <!--Card--------------------------------->
         <div class="card">
           <div class="card-img">
-            <div id="menu-img">
-              <img src="images/home-page-menu.png" alt="" />
-            </div>
+            <img src="images/home-page-menu.png" alt="" />
           </div>
           <div class="card-desc">
             <h4>Check out our menu</h4>
@@ -115,9 +116,7 @@
         <!--Card--------------------------------->
         <div class="card">
           <div class="card-img">
-            <div id="menu-img">
-              <img src="images/home-page-schedule.png" alt="" />
-            </div>
+            <img src="images/home-page-schedule.png" alt="" />
           </div>
           <div class="card-desc">
             <h4>We offer fun activities throughout the week!</h4>
@@ -134,9 +133,7 @@
         <!--Card--------------------------------->
         <div class="card">
           <div class="card-img">
-            <div id="menu-img">
-              <img src="images/home-page-about.png" alt="" />
-            </div>
+            <img src="images/home-page-about.png" alt="" />
           </div>
           <div class="card-desc">
             <h4>Find out more about us!</h4>
