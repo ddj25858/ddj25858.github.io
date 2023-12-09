@@ -124,6 +124,13 @@ footer {
   white-space: nowrap;
 }
 /*Text_______________________________________________*/
+h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: left;
+  color: #214324;
+}
 h2 {
   font-family: Poppins;
   font-weight: 700;
@@ -132,6 +139,15 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+h3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+h4 {
+  font-weight: 600;
+  font-size: 36px;
+}
+
 /*Responsive Main, Nav, and Footer_______________________________________________*/
 @media (max-width: 1299px) {
   main,
@@ -157,7 +173,18 @@ h2 {
   #hero-text {
     font-size: 35px;
   }
-
+  /*Responsive Menu Page_______________________________________________*/
+  @media (max-width: 1299px) {
+    .menu-section {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .menu-section {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
   /*blah _______________________________________________
   #nav {
     display: grid;
