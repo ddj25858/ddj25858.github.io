@@ -14,40 +14,7 @@
     <!--CSS Link------------->
     <link rel="stylesheet" href="styles/styles.css" />
 
-    <style>
-      .menu-section {
-        display: flex;
-      }
-      .menu-list {
-        width: 300px;
-      }
-      .menu-list dl {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .menu-list dt {
-        width: 50%;
-      }
-      .menu-list dd {
-        margin: 0; /* eliminates native left margin */
-        width: 50%;
-        text-align: right;
-      }
-      #coffee-img {
-        padding-left: 80px;
-      }
-      .menu-section {
-        display: flex;
-      }
-      .menu-section li {
-        list-style: none;
-      }
-      .divider {
-        width: 1150px;
-        height: 10px;
-        background-color: #92ad94;
-      }
-    </style>
+    <style></style>
   </head>
   <body id="home">
     <div id="hamburger-icon">
@@ -230,24 +197,24 @@
         src="https://kit.fontawesome.com/4cb488fd6b.js"
         crossorigin="anonymous"
       ></script>
-      <!--Card-------------------------------
-    <script>
-      // Perform this after the window has loaded
-      window.onload = () => {
-        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
-        const toggleNav = document.getElementById("toggle-nav");
-        toggleNav.innerHTML = "&#9776;";
 
-        // Tell button to do something on click
-        toggleNav.addEventListener("click", () => {
-          // toggle the body's class attribute
-          document.body.classList.toggle("nav-open");
-          toggleNav.innerHTML = document.body.classList.contains("nav-open")
-            ? "&#x2715"
-            : "&#9776;";
-        });
-      };
-    </script>
-    --></main>
+      <script>
+        // Perform this after the window has loaded
+        window.onload = () => {
+          // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+          const toggleNav = document.getElementById("hamburger-icon");
+          toggleNav.innerHTML = "&#9776;";
+
+          // Tell button to do something on click
+          toggleNav.addEventListener("click", () => {
+            // toggle the body's class attribute
+            document.body.classList.toggle("nav-open");
+            toggleNav.innerHTML = document.body.classList.contains("nav-open")
+              ? "&#x2715"
+              : "&#9776;";
+          });
+        };
+      </script>
+    </main>
   </body>
 </html>

@@ -68,22 +68,13 @@ footer {
 #nav li a:hover {
   color: white;
 }
-#hamburger-icon i {
+#hamburger-icon a {
   position: absolute;
   right: 1em;
   top: 1em;
   display: none;
   background-color: red;
 }
-/*blah _______________________________________________
-#toggle-nav {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  display: none;
-  background-color: #d8cff4;
-}
-*/
 
 /*Footer_______________________________________________*/
 footer {
@@ -212,23 +203,4 @@ h4 {
       width: 100%;
     }
   }
-  /*Hamburger Menu stuff _______________________________________________
-  #nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-  }
-  body.nav-open #nav {
-    grid-template-rows: 1fr;
-  }
-  .inner {
-    overflow: hidden;
-  }
-  #nav li {
-    display: block;
-  }
-  #toggle-nav {
-    display: block;
-  }
-  */
 }
