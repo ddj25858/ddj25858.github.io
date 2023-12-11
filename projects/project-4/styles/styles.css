@@ -10,9 +10,12 @@ main {
   width: 1300px;
   margin: 0 auto;
 }
-
+header {
+  height: 110px;
+}
 header,
 footer {
+  position: relative;
   background-color: #693e31;
   display: flex;
   justify-content: space-between;
@@ -69,11 +72,8 @@ footer {
   position: absolute;
   right: 1em;
   top: 1em;
-
-  /*
   display: none;
-  */
-  background-color: white;
+  background-color: red;
 }
 /*blah _______________________________________________
 #toggle-nav {
@@ -154,6 +154,33 @@ h4 {
   header,
   footer {
     width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  #home-button a,
+  #nav a {
+    padding-left: 0;
+  }
+  header {
+    transition: height 0.4s ease-out;
+    height: 70px;
+  }
+  body.nav-open header {
+    height: 200px;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+  .nav-row {
+    flex-direction: column;
+  }
+  #nav ul {
+    padding: 0;
+  }
+
+  #nav li {
+    display: block;
   }
 }
 
