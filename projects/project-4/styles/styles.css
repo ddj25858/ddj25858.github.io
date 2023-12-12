@@ -214,3 +214,21 @@ h4 {
     }
   }
 }
+/*Responsive Location_______________________________________________*/
+@media (max-width: 1299px) {
+  .visit-holder {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .visit-holder {
+    flex-direction: column;
+    width: 100%;
+  }
+  #location-asset {
+    max-width: 650px;
+  }
+}
+.visit-text {
+  text-align: center;
+}
