@@ -14,7 +14,45 @@
     <!--CSS Link------------->
     <link rel="stylesheet" href="styles/styles.css" />
 
-    <style></style>
+    <style>
+      .menu-section {
+        display: flex;
+        font-family: Poppins;
+      }
+      .menu-list {
+        width: 300px;
+      }
+      .menu-list dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .menu-list dt {
+        width: 50%;
+        font-size: 22px;
+        font-weight: 400;
+      }
+      .menu-list dd {
+        margin: 0; /* eliminates native left margin */
+        width: 50%;
+        text-align: right;
+        font-weight: 500;
+        font-size: 22px;
+      }
+      #coffee-img,
+      #food-img {
+        max-width: 650px;
+        padding-left: 80px;
+      }
+
+      .menu-section li {
+        list-style: none;
+      }
+      .divider {
+        max-width: 1150px;
+        height: 10px;
+        background-color: #92ad94;
+      }
+    </style>
   </head>
   <body id="home">
     <div id="hamburger-icon">
@@ -53,7 +91,7 @@
         </div>
       </header>
       <h1>Menu</h1>
-      <h2>Drinks</h2>
+      <h2 id="menu-heading">Drinks</h2>
       <h3>Coffee</h3>
       <div class="menu-section">
         <div class="menu-list">
@@ -156,10 +194,10 @@
             <dt>Scone</dt>
             <dd>$3.00</dd>
 
-            <dt>Sandwich (e.g., ham and cheese, turkey and avocado)</dt>
+            <dt>Sandwich</dt>
             <dd>$6.00</dd>
 
-            <dt>Salad (e.g., chicken Caesar, Greek)</dt>
+            <dt>Salad</dt>
             <dd>$7.50</dd>
 
             <dt>Quiche</dt>

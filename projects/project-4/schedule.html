@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brews & Bonds</title>
+    <!--Fonts------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Link------------->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <style>
+      #live-music img {
+        max-width: 1157px;
+        align-content: center;
+        align-items: center;
+      }
+      .event-holder {
+        display: flex;
+        flex-direction: row;
+      }
+      .schedule-card-holder {
+        font-family: Poppins;
+      }
+
+      .schedule-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #901111;
+      }
+      .event {
+        padding: 20px;
+      }
+      .event-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .event-time {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <div id="hamburger-icon">
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="16"
+          width="14"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <main>
+      <header>
+        <div class="nav-row">
+          <div id="home-button">
+            <a href="index.html">Brews & Bonds</a>
+          </div>
+
+          <nav id="nav" role="navigation">
+            <div class="inner">
+              <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="visit-us.html">Visit Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <h1>Schedule</h1>
+      <h4>We offer various activities and events that you can take part in!</h4>
+      <p></p>
+      <div class="live-music-holder">
+        <div id="live-music">
+          <img src="images/schedule-page-event.png" alt="" />
+        </div>
+        <div id="live-music-caption"></div>
+      </div>
+      <div class="schedule-card-holder">
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Monday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Morning Yoga Class</div>
+              <div class="event-time">8:00AM - 9:00AM</div>
+              <div class="event-desc">
+                Start your week with a relaxing yoga session.
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-title">Live Acoustic Music</div>
+              <div class="event-time">7:00PM - 9:00PM</div>
+              <div class="event-desc">
+                Enjoy soulful acoustic performances by local artists.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Tuesday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Coffee Tasting Workshop</div>
+              <div class="event-time">6:00PM - 7:30PM</div>
+              <div class="event-desc">
+                Learn about different coffee brewing methods and taste various
+                specialty coffees.
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-title">Open Mic Night</div>
+              <div class="event-time">8:00PM - 10:00PM</div>
+              <div class="event-desc">
+                Showcase your talent or enjoy the performances of local
+                musicians, poets, and comedians.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Wednesday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Art Exhibition</div>
+              <div class="event-time">All Day</div>
+              <div class="event-desc">
+                Explore the works of local artists displayed throughout the
+                coffee shop.
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-title">Trivia Night</div>
+              <div class="event-time">7:00PM - 9:00PM</div>
+              <div class="event-desc">
+                Test your knowledge and compete with friends in a fun-filled
+                trivia competition.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Thursday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Cooking Class</div>
+              <div class="event-time">5:00PM - 7:00PM</div>
+              <div class="event-desc">
+                Join our skilled chef and learn to prepare delicious desserts.
+                Limited spots available, reservations required.
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-title">Board Game Night</div>
+              <div class="event-time">6:00PM - 9:00PM</div>
+              <div class="event-desc">
+                Gather with friends and enjoy a variety of board games while
+                sipping your favorite drinks.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Friday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Live Jazz Band</div>
+              <div class="event-time">7:30PM - 9:30PM</div>
+              <div class="event-desc">
+                Relax and unwind with the smooth tunes of a live jazz band.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card--------------------------------->
+        <div class="schedule-card">
+          <div class="schedule-title">Saturday:</div>
+          <div class="event-holder">
+            <div class="event">
+              <div class="event-title">Family Day</div>
+              <div class="event-time">5:00PM - 7:00PM</div>
+              <div class="event-desc">
+                Join our skilled chef and learn to prepare delicious desserts.
+                Limited spots available, reservations required.
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-title">Board Game Night</div>
+              <div class="event-time">6:00PM - 9:00PM</div>
+              <div class="event-desc">
+                Gather with friends and enjoy a variety of board games while
+                sipping your favorite drinks.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-row"></div>
+        <div id="copyright">&copy;Brews & Bonds</div>
+        <div id="hours">
+          <i class="fa-regular fa-clock"></i>
+          <div id="hours-text">Monday - Sunday 7am-11pm</div>
+        </div>
+        <div id="contact">
+          <div id="phone-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div id="phone-number">
+            <a href="tel:248-434-5508">(248) 434-5508</a>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="https://kit.fontawesome.com/4cb488fd6b.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <script>
+        // Perform this after the window has loaded
+        window.onload = () => {
+          // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+          const toggleNav = document.getElementById("hamburger-icon");
+          toggleNav.innerHTML = "&#9776;";
+
+          // Tell button to do something on click
+          toggleNav.addEventListener("click", () => {
+            // toggle the body's class attribute
+            document.body.classList.toggle("nav-open");
+            toggleNav.innerHTML = document.body.classList.contains("nav-open")
+              ? "&#x2715"
+              : "&#9776;";
+          });
+        };
+      </script>
+    </main>
+  </body>
+</html>

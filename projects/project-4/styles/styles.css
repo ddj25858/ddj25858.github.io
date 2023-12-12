@@ -130,11 +130,21 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+#menu-heading {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 h3 {
+  font-family: Poppins;
   font-weight: 600;
   font-size: 40px;
 }
 h4 {
+  font-family: Poppins;
   font-weight: 600;
   font-size: 36px;
 }
