@@ -1,8 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -212,6 +210,26 @@ h4 {
   #hero-text {
     font-size: 35px;
   }
+
+  /*Responsive Home Page_______________________________________________*/
+
+  @media (max-width: 1299px) {
+    .card-holder,
+    .card {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .card-holder,
+    .card,
+    .card-desc,
+    .card-body-text {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
   /*Responsive Menu Page_______________________________________________*/
   @media (max-width: 1299px) {
     .menu-section {
@@ -247,7 +265,6 @@ h4 {
 
 @media (max-width: 767px) {
   #about-img {
-    padding-left: -66.5px;
-    width: 100%;
+    width: calc(100% - 133px);
   }
 }
