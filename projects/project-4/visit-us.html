@@ -19,12 +19,41 @@
         display: flex;
         flex-direction: row;
       }
+      #location-asset {
+        width: 600px;
+        height: 600px;
+      }
       .visit-text {
+        padding-left: 50px;
+        text-align: left;
         font-family: Poppins;
       }
       #location,
       #contact-us-text {
         font-weight: 600;
+        font-size: 30px;
+      }
+      #address,
+      #email {
+        font-size: 22px;
+      }
+
+      @media (max-width: 1299px) {
+        .visit-holder {
+          width: 100%;
+        }
+      }
+      @media (max-width: 767px) {
+        .visit-holder {
+          flex-direction: column;
+          width: 100%;
+        }
+        #location-asset {
+          max-width: 100%;
+        }
+        .visit-text {
+          text-align: center;
+        }
       }
     </style>
   </head>

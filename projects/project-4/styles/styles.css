@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 img {
   max-width: 100%;
@@ -211,25 +212,6 @@ h4 {
     font-size: 35px;
   }
 
-  /*Responsive Home Page_______________________________________________*/
-
-  @media (max-width: 1299px) {
-    .card-holder,
-    .card {
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .card-holder,
-    .card,
-    .card-desc,
-    .card-body-text {
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-
   /*Responsive Menu Page_______________________________________________*/
   @media (max-width: 1299px) {
     .menu-section {
@@ -243,24 +225,7 @@ h4 {
     }
   }
 }
-/*Responsive Location Page_______________________________________________*/
-@media (max-width: 1299px) {
-  .visit-holder {
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .visit-holder {
-    flex-direction: column;
-    width: 100%;
-  }
-  #location-asset {
-    max-width: 650px;
-  }
-}
-.visit-text {
-  text-align: center;
-}
+
 /*Responsive About Page_______________________________________________*/
 
 @media (max-width: 767px) {
