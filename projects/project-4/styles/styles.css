@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -27,8 +29,10 @@ footer {
 
 .nav-row {
   display: flex;
+  justify-content: space-between;
   max-width: 900px;
   align-items: center;
+  padding: 0 30px;
 }
 #home-button a {
   text-decoration: none;
@@ -36,7 +40,6 @@ footer {
   font-weight: 700;
   font-size: 48px;
   color: #fab5b5;
-  padding-left: 38px;
   align-items: center;
 }
 #menu nav li:nth-child(1) a,
@@ -68,12 +71,15 @@ footer {
 #nav li a:hover {
   color: white;
 }
-#hamburger-icon a {
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
+  color: white;
   position: absolute;
   right: 1em;
-  top: 1em;
-  display: none;
-  background-color: red;
+  top: 1.5em;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 /*Footer_______________________________________________*/
@@ -148,6 +154,10 @@ h4 {
   font-weight: 600;
   font-size: 36px;
 }
+#about-text {
+  font-family: Poppins;
+  padding: 10px 50px 15px 50px;
+}
 
 /*Responsive Main, Nav, and Footer_______________________________________________*/
 @media (max-width: 1299px) {
@@ -162,6 +172,7 @@ h4 {
   #nav a {
     padding-left: 0;
   }
+
   header {
     transition: height 0.4s ease-out;
     height: 70px;
@@ -214,7 +225,7 @@ h4 {
     }
   }
 }
-/*Responsive Location_______________________________________________*/
+/*Responsive Location Page_______________________________________________*/
 @media (max-width: 1299px) {
   .visit-holder {
     width: 100%;
@@ -231,4 +242,12 @@ h4 {
 }
 .visit-text {
   text-align: center;
+}
+/*Responsive About Page_______________________________________________*/
+
+@media (max-width: 767px) {
+  #about-img {
+    padding-left: -66.5px;
+    width: 100%;
+  }
 }
