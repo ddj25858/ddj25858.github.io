@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+main {
+  margin: 0 auto;
+  background-color: white;
+}
+.container {
+  flex-wrap: wrap;
+}
+.item-1 {
+  max-width: 100%;
+}
+.item-2 {
+  max-width: 100%;
+  margin-top: 30px;
+  font-family: Kanit;
+}
+.item-3 {
+  max-width: 100%;
+}
+
+/*Home Page-----------------------------------------------------------*/
+#home-main-article {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px 0 20px;
+}
+#home-main-article-pic img {
+  max-width: 683px;
+}
+#home-main-article-text {
+  margin-left: 40px;
+}
+#home-main-article-heading {
+  font-weight: 500;
+  font-size: 28px;
+}
+#home-main-article-desc {
+  font-weight: 300;
+}
+#home-main-article-time {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 20px;
+}
+.home-article-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.home-article-card {
+  display: block;
+  width: 341px;
+  margin-top: 30px;
+}
+.home-article-pic {
+  width: 100%;
+}
+.home-article-text {
+  margin-top: 10px;
+}
+.home-article-heading {
+  font-weight: 500;
+}
+.home-article-desc {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.home-article-time {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#home-newsletter {
+  background-color: #753645;
+  margin-top: 70px;
+  color: white;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#home-newsletter-desc {
+  margin-left: 30px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+#home-newsletter-login-shapes {
+  display: inline-block;
+}
+form > #email {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  font-family: Kanit;
+}
+form > #signup-btn {
+  background-color: #e8f36a;
+  padding: 10px 95px 10px 95px;
+  margin: 5px 0 0 0;
+  font-family: Kanit;
+  font-weight: 600;
+  font-size: 20px;
+}
+#home-daily-smile-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#daily-smile-text {
+  display: block;
+}
+#daily-smile-upper-box {
+  background-color: #005baa;
+  text-align: center;
+  padding: 60px 30px 60px 30px;
+  color: white;
+}
+#home-daily-smile-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+#daily-smile-lower-box {
+  background-color: #023e73;
+  padding: 60px 30px 60px 30px;
+  color: white;
+}
+#daily-smile-btn a {
+  text-decoration: none;
+  color: white;
+  margin-top: 50px;
+  padding: 5px;
+  background-color: #005baa;
+}
+#daily-smile-btn a:hover {
+  background-color: #0d77d3;
+}
+@media (max-width: 900px) {
+  #home-main-article {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #home-main-article,
+  #home-daily-smile-box {
+    display: block;
+  }
+  #home-main-article-pic img {
+    width: 100%;
+  }
+}
+/*Footer------------------------------------*/
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #023e73;
+}
+#footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-icons {
+  display: flex;
+}
+#footer-icons a {
+  display: flex;
+  margin-left: 10px;
+  max-width: 30px;
+}
+#copyright {
+  font-family: Kanit;
+  color: white;
+  margin-top: 8px;
+}
